@@ -1,0 +1,184 @@
+$backgroud-color: black;
+$color-font: white;
+$color-font2: orange;
+$backgroud-header: yellow;
+$backgroud-header2: red;
+$txtH: 140%;
+$txtN: 125%;
+
+@mixin sizes($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+body{  background-color: $backgroud-color;
+}
+
+header{
+    background-image: linear-gradient(to bottom, $backgroud-header, $backgroud-header2);
+    text-align: center;
+
+}
+
+
+section{background-color: none;
+margin-top: 0px;
+}
+
+h1{color: $color-font}
+
+
+.contenido{display: flex; flex-direction: row;}
+
+    .imgIndex{
+        overflow: hidden;
+        @include sizes(90%, auto);
+        margin: auto;
+        margin-top: 10px;
+
+        ul{ display: flex;
+            animation: cambio 20s infinite alternate linear;
+            list-style: none;
+            padding: 0px;
+            @include sizes(500%, auto);
+            li{
+                @include sizes(100%, auto);
+                .img2{
+                    @include sizes(100%, auto);
+                    transform: scale(1); transition: all .5s;
+                    &:hover{
+                        transform: scale(1.08);}}
+            @keyframes cambio {
+
+            0% {margin-left: 0;}
+            16% {margin-left: 0;}
+
+            21% {margin-left: -100%;}
+            37% {margin-left: -100%;}
+
+            42% {margin-left: -200%;}
+            58% {margin-left: -200%;}
+
+            63% {margin-left: -300%;}
+            79% {margin-left: -300%;}
+
+            84% {margin-left: -400%;}
+            100% {margin-left: -400%;}
+                }
+            }
+        }
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: row;
+        @include sizes(100%, auto);
+        margin-top: 10px;
+        h2{color: $color-font2}
+
+        .demo-card-wide{
+            @include sizes(100%, auto);
+            .mdl-card__title {
+                color: $color-font;
+                @include sizes(auto, 176px);
+                background: url('../imagenes/9.gif') center / cover;
+            }
+            }
+
+            #cards2{
+                .mdl-card__title{
+                @include sizes(auto, 176px);
+                background: url('../imagenes/10.gif') center / cover}
+
+                .mdl-card__menu {
+                color: $color-font;
+                }
+            }
+        }
+
+        #sinopsis{
+            p{
+                color: $color-font;
+                font-size: $txtH;
+                text-align: justify;
+                margin-top: 20px;}
+            .col-4{
+                .imgSinopsis{
+                    @include sizes(100%, auto);
+                    transform: scale(1);
+                    transition: all .5s;
+                        &:hover{ transform: scale(0.9);}
+                    }
+                }
+            }
+            #heroes, #villanos{
+                .titulo{
+                    margin: 10px 0px 30px 0px;}
+                .imgheroe{
+                    background-color: $color-font;
+                    margin: 10px;
+                    overflow: hidden;}
+                #imgheroe{
+                    @include sizes(100%, auto);}
+            }
+
+
+
+#redes{margin: auto;}
+
+    #contactos{
+        .imgred{
+            @include sizes(100%, auto);}
+        .info{
+            color:$color-font}
+        .contacto{
+            text-align: center;
+            margin-top: 20px;
+            font-size: $txtN;
+        .form-group{
+            margin-top: 15px;
+            .form-control{
+                text-align: center;
+                font-size: $txtN;}
+        }
+        .form-check{
+            margin-top: 15px;}
+        }
+    }
+
+
+
+    .publicidad{
+        padding-right: 0px;
+
+        .publicidad1{
+            position: sticky;
+            top: 1px;
+            @include sizes(100%, auto);
+
+            .publi1{
+                @include sizes(100%, auto);}
+            }
+    }
+
+footer{
+    text-align: center;
+    color: $color-font;}
+
+.texto-error{
+    text-align: center;}
+
+.imagen-error{
+    text-align: center;
+}
+
+.boton{
+    text-align: center;
+    #volver{text-decoration: none;}
+    margin: 10px 0px 20px 0px;
+}
+
+.flecha{
+    text-align: center;
+    .img-flecha{width: 10%;}
+}
