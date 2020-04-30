@@ -1,0 +1,288 @@
+body {
+  background-color: black;
+}
+
+header {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(yellow), to(red));
+  background-image: linear-gradient(to bottom, yellow, red);
+  text-align: center;
+}
+
+section {
+  background-color: none;
+  margin-top: 0px;
+}
+
+h1 {
+  color: white;
+}
+
+.contenido {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.imgIndex {
+  overflow: hidden;
+  width: 90%;
+  height: auto;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.imgIndex ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: cambio 20s infinite alternate linear;
+          animation: cambio 20s infinite alternate linear;
+  list-style: none;
+  padding: 0px;
+  width: 500%;
+  height: auto;
+}
+
+.imgIndex ul li {
+  width: 100%;
+  height: auto;
+}
+
+.imgIndex ul li .img2 {
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.imgIndex ul li .img2:hover {
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+@-webkit-keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  16% {
+    margin-left: 0;
+  }
+  21% {
+    margin-left: -100%;
+  }
+  37% {
+    margin-left: -100%;
+  }
+  42% {
+    margin-left: -200%;
+  }
+  58% {
+    margin-left: -200%;
+  }
+  63% {
+    margin-left: -300%;
+  }
+  79% {
+    margin-left: -300%;
+  }
+  84% {
+    margin-left: -400%;
+  }
+  100% {
+    margin-left: -400%;
+  }
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  16% {
+    margin-left: 0;
+  }
+  21% {
+    margin-left: -100%;
+  }
+  37% {
+    margin-left: -100%;
+  }
+  42% {
+    margin-left: -200%;
+  }
+  58% {
+    margin-left: -200%;
+  }
+  63% {
+    margin-left: -300%;
+  }
+  79% {
+    margin-left: -300%;
+  }
+  84% {
+    margin-left: -400%;
+  }
+  100% {
+    margin-left: -400%;
+  }
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.cards h2 {
+  color: orange;
+}
+
+.cards .demo-card-wide {
+  width: 100%;
+  height: auto;
+}
+
+.cards .demo-card-wide .mdl-card__title {
+  color: white;
+  width: auto;
+  height: 176px;
+  background: url("../imagenes/9.gif") center/cover;
+}
+
+.cards #cards2 .mdl-card__title {
+  width: auto;
+  height: 176px;
+  background: url("../imagenes/10.gif") center/cover;
+}
+
+.cards #cards2 .mdl-card__menu {
+  color: white;
+}
+
+#sinopsis p {
+  color: white;
+  font-size: 140%;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+#sinopsis .col-4 .imgSinopsis {
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+#sinopsis .col-4 .imgSinopsis:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#heroes .titulo, #villanos .titulo {
+  margin: 10px 0px 30px 0px;
+}
+
+#heroes .imgheroe, #villanos .imgheroe {
+  background-color: white;
+  margin: 10px;
+  overflow: hidden;
+}
+
+#heroes #imgheroe, #villanos #imgheroe {
+  width: 100%;
+  height: auto;
+}
+
+#redes {
+  margin: auto;
+}
+
+#contactos .imgred {
+  width: 100%;
+  height: auto;
+}
+
+#contactos .info {
+  color: white;
+}
+
+#contactos .contacto {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 125%;
+}
+
+#contactos .contacto .form-group {
+  margin-top: 15px;
+}
+
+#contactos .contacto .form-group .form-control {
+  text-align: center;
+  font-size: 125%;
+}
+
+#contactos .contacto .form-check {
+  margin-top: 15px;
+}
+
+.publicidad {
+  padding-right: 0px;
+}
+
+.publicidad .publicidad1 {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 1px;
+  width: 100%;
+  height: auto;
+}
+
+.publicidad .publicidad1 .publi1 {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
+  color: white;
+}
+
+.texto-error {
+  text-align: center;
+}
+
+.imagen-error {
+  text-align: center;
+}
+
+.boton {
+  text-align: center;
+  margin: 10px 0px 20px 0px;
+}
+
+.boton #volver {
+  text-decoration: none;
+}
+
+.flecha {
+  text-align: center;
+}
+
+.flecha .img-flecha {
+  width: 10%;
+}
+/*# sourceMappingURL=style.css.map */
